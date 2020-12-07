@@ -29,4 +29,6 @@ jobs:
         username: zhwfj7br79cd
         host: 148.72.202.240chmod
         password: ${{ secrets.SSH_PASSWORD }}
-        script: 'cd public_html/laravel_gitaction_push_deploy/laravelpushdeploy_1 && chmod a+x server_deploy.sh && ./server_deploy.sh'
+        script: cd public_html/laravel_gitaction_push_deploy/laravelpushdeploy_1
+          chmod a+x server_deploy.sh
+          ./server_deploy.sh
