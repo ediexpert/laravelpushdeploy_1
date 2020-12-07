@@ -30,4 +30,4 @@ jobs:
         host: 148.72.202.240
         password: ${{ secrets.SSH_PASSWORD }}
         #script: 'cd public_html/laravel_gitaction_push_deploy && ./server_deploy.sh'
-        script: 'cd public_html/laravel_gitaction_push_deploy'
+        script: 'cd public_html/laravel_gitaction_push_deploy && mkdir imran'
