@@ -31,5 +31,4 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         script: |
           cd public_html/laravel_gitaction_push_deploy/laravelpushdeploy_1
-          chmod a+x server_deploy.sh
           ./server_deploy.sh
