@@ -26,10 +26,10 @@ jobs:
     - name: Deploy to production
       uses: appleboy/ssh-action@master
       with:
-        username: zhwfj7br79cd
-        host: 148.72.202.240
+        username: ${{ secrets.SSH_USERNAME }}
+        host: ${{ secrets.SSH_HOST }}
         password: ${{ secrets.SSH_PASSWORD }}
         script: |
-          cd public_html/laravel_gitaction_push_deploy/laravelpushdeploy_1
+          cd /var/www/html
           chmod a+x server_deploy.sh
           ./server_deploy.sh
